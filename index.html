@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Primary Meta Tags -->
+  <title>Praveen S | Aspiring AI/ML &amp; Software Developer Portfolio</title>
+  <meta name="title" content="Praveen S | Aspiring AI/ML & Software Developer Portfolio">
+  <meta name="description" content="Portfolio of Praveen S — B.E. Computer Science & Engineering (AI & ML) student at Sudharsan Engineering College (2023–2027), Trichy. Specializing in Python, NLP, AI/ML, and Software Development.">
+  <meta name="keywords" content="Praveen S, AI ML Developer, Software Developer, Python, NLP, Whisper, spaCy, Hugging Face, Sudharsan Engineering College, Trichy Portfolio">
+  <meta name="author" content="Praveen S">
+
+  <!-- Open Graph / Social Media Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Praveen S | Aspiring AI/ML &amp; Software Developer">
+  <meta property="og:description" content="Portfolio of Praveen S — Specializing in AI/ML, NLP, Python programming, and modern software development.">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Google Fonts Preconnect & Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Favicon (Inline SVG Data URI) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f172a'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-family='sans-serif' font-weight='800' font-size='16' fill='%2310b981'%3EPS%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- Cosmic Starfield Background (Canvas & Subtle Nebulae) -->
+  <canvas id="starfield-canvas" class="starfield-canvas" aria-hidden="true"></canvas>
+  <div class="cosmic-nebula nebula-top" aria-hidden="true"></div>
+  <div class="cosmic-nebula nebula-bottom" aria-hidden="true"></div>
+
+  <!-- =========================================================
+       HEADER & NAVIGATION BAR
+       ========================================================= -->
+  <header class="navbar-wrapper" id="main-header">
+    <div class="container nav-container">
+      <a href="#home" class="logo" aria-label="Praveen S Portfolio Home">
+        <span class="logo-badge">PS</span>
+        <span class="logo-text">Praveen<span class="accent-text">.dev</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Button & Mobile Menu Toggle -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-outline nav-cta">Let's Talk</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================
+       MAIN CONTENT
+       ========================================================= -->
+  <main id="main-content">
+
+    <!-- 1. HERO / HOME SECTION -->
+    <section class="hero-section section-padding" id="home">
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="status-indicator"></span>
+            <span>Open for AI/ML &amp; Software Internships</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Praveen S</span>
+          </h1>
+
+          <h2 class="hero-subtitle">
+            Aspiring <span class="highlight-code">AI/ML</span> &amp; <span class="highlight-code">Software Developer</span>
+          </h2>
+
+          <p class="hero-description">
+            B.E. Computer Science and Engineering student specializing in <strong>Artificial Intelligence &amp; Machine Learning</strong> at Sudharsan Engineering College (2023–2027), Trichy. Passionate about building intelligent systems, Natural Language Processing pipelines, Python development, and scalable software solutions.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Projects</span>
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+
+          <!-- Quick Highlights -->
+          <div class="hero-meta">
+            <div class="meta-item">
+              <span class="meta-label">Location</span>
+              <span class="meta-value">Trichy, Tamil Nadu, India</span>
+            </div>
+            <div class="meta-divider" aria-hidden="true"></div>
+            <div class="meta-item">
+              <span class="meta-label">Focus</span>
+              <span class="meta-value">AI, NLP &amp; Python Stack</span>
+            </div>
+            <div class="meta-divider" aria-hidden="true"></div>
+            <div class="meta-item">
+              <span class="meta-label">Graduation</span>
+              <span class="meta-value">Batch 2023 – 2027</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Profile Card -->
+        <div class="hero-visual">
+          <div class="profile-card">
+            <div class="profile-avatar-wrapper">
+              <div class="avatar-ring"></div>
+              <div class="profile-initials">
+                <span>PS</span>
+              </div>
+              <div class="avatar-badge" title="AI &amp; ML Specialist">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+              </div>
+            </div>
+
+            <div class="profile-info-box">
+              <h3 class="profile-name">Praveen S</h3>
+              <p class="profile-role">B.E. CSE (AI &amp; ML)</p>
+              <div class="profile-tags">
+                <span class="tag">Python</span>
+                <span class="tag">AI / ML</span>
+                <span class="tag">NLP</span>
+                <span class="tag">Full-Stack</span>
+              </div>
+            </div>
+
+            <!-- Terminal-style Mini Card -->
+            <div class="mini-terminal">
+              <div class="terminal-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="terminal-title">praveen@developer:~$</span>
+              </div>
+              <div class="terminal-body">
+                <code><span class="cmd-prompt">&gt;</span> target_goal = <span class="cmd-str">"AI/ML &amp; Dev Roles"</span></code>
+                <code><span class="cmd-prompt">&gt;</span> active_project = <span class="cmd-str">"WaVisio AI"</span></code>
+                <code><span class="cmd-prompt">&gt;</span> status = <span class="cmd-highlight">"Ready to Collaborate"</span></code>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. ABOUT ME SECTION -->
+    <section class="about-section section-padding" id="about">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">About Me</div>
+          <h2 class="section-title">Driven by Curiosity, Grounded in <span class="gradient-text">AI Innovation</span></h2>
+          <p class="section-subtitle">A glimpse into my academic journey, technical passion, and future vision.</p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Narrative Biography -->
+          <div class="about-story-card card">
+            <h3 class="card-title">Professional Background</h3>
+            <p class="paragraph">
+              I am a dedicated <strong>Computer Science and Engineering</strong> undergraduate specializing in <strong>Artificial Intelligence and Machine Learning</strong> at <strong>Sudharsan Engineering College</strong> (2023–2027), based in Trichy, Tamil Nadu, India.
+            </p>
+            <p class="paragraph">
+              My technical journey is fueled by a passion for solving practical problems through intelligent software. I have developed hands-on proficiency in <strong>Python programming</strong>, <strong>Natural Language Processing (NLP)</strong>, and data manipulation using NumPy and Pandas.
+            </p>
+            <p class="paragraph">
+              Beyond theory, I love architecting working applications — ranging from my flagship project <strong>WaVisio</strong> (an AI visual learning tool leveraging Whisper speech recognition and spaCy concept extraction) to responsive database-driven web platforms built with HTML, CSS, PHP, and MySQL.
+            </p>
+            
+            <div class="career-goal-box">
+              <div class="goal-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="12 6 12 12 14 14"></polygon></svg>
+              </div>
+              <div class="goal-text">
+                <strong>Career Objective:</strong> To secure an impactful internship or entry-level software/AI role where I can contribute to real-world products, deepen my machine learning expertise, and grow alongside collaborative engineering teams.
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic & Quick Facts Details -->
+          <div class="about-details-column">
+            
+            <!-- Education Card -->
+            <div class="education-card card">
+              <div class="card-badge">Academic Qualification</div>
+              <div class="edu-header">
+                <div class="edu-icon" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                </div>
+                <div>
+                  <h3 class="edu-degree">B.E. Computer Science &amp; Engineering</h3>
+                  <span class="edu-specialization">Specialization in AI &amp; Machine Learning</span>
+                </div>
+              </div>
+              
+              <div class="edu-details">
+                <div class="edu-row">
+                  <span class="edu-label">Institution:</span>
+                  <span class="edu-val">Sudharsan Engineering College</span>
+                </div>
+                <div class="edu-row">
+                  <span class="edu-label">Duration:</span>
+                  <span class="edu-val highlight-green">2023 – 2027 (Undergraduate)</span>
+                </div>
+                <div class="edu-row">
+                  <span class="edu-label">Location:</span>
+                  <span class="edu-val">Trichy, Tamil Nadu, India</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Core Principles / Values -->
+            <div class="pillars-grid">
+              <div class="pillar-card card">
+                <div class="pillar-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                </div>
+                <h4 class="pillar-title">Practical Engineering</h4>
+                <p class="pillar-desc">Applying algorithms to tangible tools that address real educational and business challenges.</p>
+              </div>
+              <div class="pillar-card card">
+                <div class="pillar-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                </div>
+                <h4 class="pillar-title">Continuous Upskilling</h4>
+                <p class="pillar-desc">Constantly exploring emerging AI architectures, cloud environments, and modern workflows.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. SKILLS SECTION -->
+    <section class="skills-section section-padding" id="skills">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-tag">Capabilities</div>
+          <h2 class="section-title">Technical <span class="gradient-text">Skillset &amp; Tooling</span></h2>
+          <p class="section-subtitle">Categorized breakdown of verified programming languages, AI frameworks, tools, and spoken languages.</p>
+        </div>
+
+        <div class="skills-grid">
+
+          <!-- Category 1: Technical & Programming Skills -->
+          <div class="skill-category-card card">
+            <div class="category-header">
+              <div class="category-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <div>
+                <h3 class="category-title">Technical &amp; Core Programming</h3>
+                <span class="category-caption">Languages, Web &amp; Database</span>
+              </div>
+            </div>
+
+            <div class="skill-chips-container">
+              <div class="skill-chip">
+                <span class="chip-dot"></span>
+                <span class="chip-name">Python</span>
+                <span class="chip-level">Primary</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-dot"></span>
+                <span class="chip-name">HTML</span>
+                <span class="chip-level">Semantic</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-dot"></span>
+                <span class="chip-name">CSS</span>
+                <span class="chip-level">Responsive</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-dot"></span>
+                <span class="chip-name">PHP</span>
+                <span class="chip-level">Server-side</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-dot"></span>
+                <span class="chip-name">MySQL</span>
+                <span class="chip-level">Relational DB</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-dot"></span>
+                <span class="chip-name">NumPy</span>
+                <span class="chip-level">Data Array</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-dot"></span>
+                <span class="chip-name">Pandas</span>
+                <span class="chip-level">Basic</span>
+              </div>
+            </div>
+            
+            <p class="skill-card-note">Honest proficiency representation without arbitrary percentage bars.</p>
+          </div>
+
+          <!-- Category 2: AI / NLP Project Technologies -->
+          <div class="skill-category-card card">
+            <div class="category-header">
+              <div class="category-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path><path d="M12 6v6l4 2"></path></svg>
+              </div>
+              <div>
+                <h3 class="category-title">AI &amp; NLP Project Technologies</h3>
+                <span class="category-caption">Speech, NLP &amp; GUI</span>
+              </div>
+            </div>
+
+            <div class="skill-chips-container">
+              <div class="skill-chip highlight-chip">
+                <span class="chip-dot"></span>
+                <span class="chip-name">Whisper</span>
+                <span class="chip-level">Speech-to-Text</span>
+              </div>
+              <div class="skill-chip highlight-chip">
+                <span class="chip-dot"></span>
+                <span class="chip-name">spaCy</span>
+                <span class="chip-level">NLP / Extraction</span>
+              </div>
+              <div class="skill-chip highlight-chip">
+                <span class="chip-dot"></span>
+                <span class="chip-name">Hugging Face</span>
+                <span class="chip-level">Transformers</span>
+              </div>
+              <div class="skill-chip highlight-chip">
+                <span class="chip-dot"></span>
+                <span class="chip-name">PyQt5</span>
+                <span class="chip-level">Desktop GUI</span>
+              </div>
+            </div>
+
+            <p class="skill-card-note">Core technological foundation utilized in the WaVisio AI visual learning system.</p>
+          </div>
+
+          <!-- Category 3: Productivity & Design Tools -->
+          <div class="skill-category-card card">
+            <div class="category-header">
+              <div class="category-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              </div>
+              <div>
+                <h3 class="category-title">Tools &amp; Workflow</h3>
+                <span class="category-caption">Design &amp; Office Suites</span>
+              </div>
+            </div>
+
+            <div class="skill-chips-container">
+              <div class="skill-chip">
+                <span class="chip-dot"></span>
+                <span class="chip-name">Canva</span>
+                <span class="chip-level">Graphics</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-dot"></span>
+                <span class="chip-name">Figma</span>
+                <span class="chip-level">UI Mockups</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-dot"></span>
+                <span class="chip-name">Microsoft Excel</span>
+                <span class="chip-level">Data Sheets</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-dot"></span>
+                <span class="chip-name">MS PowerPoint</span>
+                <span class="chip-level">Presentations</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-dot"></span>
+                <span class="chip-name">Microsoft Word</span>
+                <span class="chip-level">Documentation</span>
+              </div>
+            </div>
+
+            <p class="skill-card-note">Effective documentation, project presentation, and design prototyping.</p>
+          </div>
+
+          <!-- Category 4: Spoken Languages -->
+          <div class="skill-category-card card">
+            <div class="category-header">
+              <div class="category-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              </div>
+              <div>
+                <h3 class="category-title">Spoken Languages</h3>
+                <span class="category-caption">Communication &amp; Collaboration</span>
+              </div>
+            </div>
+
+            <div class="skill-chips-container">
+              <div class="skill-chip">
+                <span class="chip-dot"></span>
+                <span class="chip-name">Tamil</span>
+                <span class="chip-level">Native / Fluent</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-dot"></span>
+                <span class="chip-name">English</span>
+                <span class="chip-level">Professional Working</span>
+              </div>
+            </div>
+
+            <p class="skill-card-note">Clear verbal and written communication for team collaboration and technical documentation.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. PROJECTS SECTION -->
+    <section class="projects-section section-padding" id="projects">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-tag">Portfolio Work</div>
+          <h2 class="section-title">Featured <span class="gradient-text">Engineering Projects</span></h2>
+          <p class="section-subtitle">Real-world AI implementations and full-stack software prototypes built with modern practices.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- PROJECT 1: WaVisio (FEATURED FLAGSHIP) -->
+          <article class="project-card featured-project card">
+            <div class="project-badge-bar">
+              <span class="project-featured-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                Flagship AI/ML Project
+              </span>
+              <span class="project-status">Completed</span>
+            </div>
+
+            <!-- Custom CSS Illustration for WaVisio -->
+            <div class="project-visual-canvas visual-wavisio" aria-hidden="true">
+              <div class="canvas-grid-bg"></div>
+              <div class="ai-flow-display">
+                <div class="flow-step">
+                  <div class="flow-icon">🎙️</div>
+                  <span>Teacher Speech</span>
+                </div>
+                <div class="flow-arrow">➔</div>
+                <div class="flow-step step-model">
+                  <div class="flow-icon">⚡</div>
+                  <span>Whisper ASR</span>
+                </div>
+                <div class="flow-arrow">➔</div>
+                <div class="flow-step step-nlp">
+                  <div class="flow-icon">🧠</div>
+                  <span>spaCy NLP</span>
+                </div>
+                <div class="flow-arrow">➔</div>
+                <div class="flow-step step-output">
+                  <div class="flow-icon">📊</div>
+                  <span>Visuals &amp; Subtitles</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">WaVisio — AI Visual Learning System</h3>
+              <p class="project-description">
+                An intelligent educational system designed to bridge auditory and visual learning. WaVisio listens to a teacher's spoken lecture in real time, converts speech to text using OpenAI Whisper, extracts key concepts and entities via spaCy, and automatically generates live visual diagrams, real-time subtitles, and multilingual explanations.
+              </p>
+
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <span class="check-icon">✓</span>
+                  <span>Converts spoken lectures into real-time visual diagrams &amp; explanations</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="check-icon">✓</span>
+                  <span>Real-time subtitles with multi-format audio/video input support</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="check-icon">✓</span>
+                  <span>Interactive desktop interface powered by Python and PyQt5</span>
+                </div>
+              </div>
+
+              <!-- Tech Stack Tags -->
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">AI/ML</span>
+                <span class="tech-tag">Whisper</span>
+                <span class="tech-tag">NLP</span>
+                <span class="tech-tag">spaCy</span>
+                <span class="tech-tag">Hugging Face</span>
+                <span class="tech-tag">PyQt5</span>
+              </div>
+
+              <!-- Honest Project Links -->
+              <div class="project-links">
+                <a href="#contact" class="btn btn-sm btn-primary">
+                  <span>Inquire / Demo Request</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+                <span class="link-notice-badge">Desktop Application (Academic Project)</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Hotel Management Website -->
+          <article class="project-card card">
+            <div class="project-badge-bar">
+              <span class="project-type-badge">Full-Stack Web</span>
+              <span class="project-status">Sample Project</span>
+            </div>
+
+            <!-- Custom CSS Illustration for Hotel Website -->
+            <div class="project-visual-canvas visual-hotel" aria-hidden="true">
+              <div class="canvas-grid-bg"></div>
+              <div class="mockup-window">
+                <div class="mockup-bar">
+                  <span class="m-dot"></span><span class="m-dot"></span><span class="m-dot"></span>
+                  <span class="m-url">hotel-management/booking.php</span>
+                </div>
+                <div class="mockup-screen">
+                  <div class="mockup-hero-line"></div>
+                  <div class="mockup-card-row">
+                    <div class="mockup-box">🏨 Room A</div>
+                    <div class="mockup-box active-box">📅 Reserve</div>
+                    <div class="mockup-box">💳 Bill</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">Hotel Management Website</h3>
+              <p class="project-description">
+                A full-featured web-based hospitality management system built to streamline room reservations, customer check-in records, invoice generation, and real-time room availability status.
+              </p>
+
+              <div class="tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+              </div>
+
+              <!-- Honest Editable Placeholder Links -->
+              <div class="project-links">
+                <!-- Replace 'https://github.com/your-username/hotel-management' with actual repo URL when available -->
+                <a href="https://github.com/your-username/hotel-management" target="_blank" rel="noopener noreferrer" class="project-action-link" title="Replace with your GitHub repository link">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>GitHub (Placeholder)</span>
+                </a>
+                <!-- Replace '#' with your actual live demo URL when deployed -->
+                <a href="#" class="project-action-link demo-disabled" title="Live demo link placeholder — add your deployed URL here">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>Live Demo (Placeholder)</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: E-Commerce Website -->
+          <article class="project-card card">
+            <div class="project-badge-bar">
+              <span class="project-type-badge">Full-Stack Web</span>
+              <span class="project-status">Sample Project</span>
+            </div>
+
+            <!-- Custom CSS Illustration for E-Commerce Website -->
+            <div class="project-visual-canvas visual-ecommerce" aria-hidden="true">
+              <div class="canvas-grid-bg"></div>
+              <div class="mockup-window">
+                <div class="mockup-bar">
+                  <span class="m-dot"></span><span class="m-dot"></span><span class="m-dot"></span>
+                  <span class="m-url">shop-store/checkout.php</span>
+                </div>
+                <div class="mockup-screen">
+                  <div class="mockup-card-row">
+                    <div class="mockup-box">🛍️ Catalog</div>
+                    <div class="mockup-box">🛒 Cart (3)</div>
+                    <div class="mockup-box active-box">💳 Checkout</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">E-Commerce Website</h3>
+              <p class="project-description">
+                A responsive online store platform featuring product catalogs, category filtering, cart management, user session handling, and database-backed order storage.
+              </p>
+
+              <div class="tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+              </div>
+
+              <!-- Honest Editable Placeholder Links -->
+              <div class="project-links">
+                <!-- Replace 'https://github.com/your-username/ecommerce-store' with actual repo URL when available -->
+                <a href="https://github.com/your-username/ecommerce-store" target="_blank" rel="noopener noreferrer" class="project-action-link" title="Replace with your GitHub repository link">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>GitHub (Placeholder)</span>
+                </a>
+                <!-- Replace '#' with your actual live demo URL when deployed -->
+                <a href="#" class="project-action-link demo-disabled" title="Live demo link placeholder — add your deployed URL here">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>Live Demo (Placeholder)</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: Optional Idea (Strictly labeled as an idea as per prompt) -->
+          <article class="project-card project-idea-card card">
+            <div class="project-badge-bar">
+              <span class="project-idea-badge">Research &amp; Concept Idea</span>
+              <span class="project-status">Upcoming / In Roadmap</span>
+            </div>
+
+            <!-- Custom CSS Illustration for Prediction Concept -->
+            <div class="project-visual-canvas visual-concept" aria-hidden="true">
+              <div class="canvas-grid-bg"></div>
+              <div class="concept-chart">
+                <span class="bar-col b1"></span>
+                <span class="bar-col b2"></span>
+                <span class="bar-col b3"></span>
+                <span class="bar-col b4"></span>
+                <span class="trend-line"></span>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">Student Marks Prediction Using Machine Learning</h3>
+              <p class="project-description">
+                <em>(Planned Project Concept)</em> — An analytical regression model concept exploring student performance trends based on historical study hours, attendance, and assessment metrics using Python, NumPy, and Pandas.
+              </p>
+
+              <div class="tech-tags">
+                <span class="tech-tag">Machine Learning</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">NumPy</span>
+                <span class="tech-tag">Pandas</span>
+              </div>
+
+              <div class="project-links">
+                <span class="concept-notice">Note: In planning stage. Implementation details will be updated once confirmed.</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. INTERNSHIPS & CERTIFICATIONS SECTION -->
+    <section class="experience-section section-padding" id="experience">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-tag">Track Record</div>
+          <h2 class="section-title">Internships &amp; <span class="gradient-text">Certifications</span></h2>
+          <p class="section-subtitle">Practical industry exposure and accredited technical skill assessments from my academic record.</p>
+        </div>
+
+        <div class="experience-dual-layout">
+
+          <!-- Left Column: Internships -->
+          <div class="timeline-column">
+            <div class="column-title-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+              <h3>Industry Internships</h3>
+            </div>
+
+            <div class="timeline-wrapper">
+
+              <!-- Internship 1 -->
+              <div class="timeline-card card">
+                <div class="timeline-indicator"></div>
+                <div class="timeline-header">
+                  <h4 class="timeline-role">Web Development Intern</h4>
+                  <span class="timeline-company">CodeBind Technologies</span>
+                </div>
+                <p class="timeline-desc">
+                  Gained practical industry exposure to modern web development standards, responsive page structuring, and full-stack development methodologies.
+                </p>
+                <div class="timeline-meta-tags">
+                  <span class="mini-tag">Web Development</span>
+                  <span class="mini-tag">Frontend &amp; Backend</span>
+                </div>
+              </div>
+
+              <!-- Internship 2 -->
+              <div class="timeline-card card">
+                <div class="timeline-indicator"></div>
+                <div class="timeline-header">
+                  <h4 class="timeline-role">Cloud Computing Intern</h4>
+                  <span class="timeline-company">Samcore Technologies</span>
+                </div>
+                <p class="timeline-desc">
+                  Explored foundational cloud infrastructure models, virtualized computing paradigms, and cloud service integration workflows.
+                </p>
+                <div class="timeline-meta-tags">
+                  <span class="mini-tag">Cloud Infrastructure</span>
+                  <span class="mini-tag">Virtualization</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right Column: Certifications -->
+          <div class="certifications-column">
+            <div class="column-title-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+              <h3>Accredited Certifications</h3>
+            </div>
+
+            <div class="cert-cards-list">
+
+              <!-- Certification 1: NPTEL -->
+              <div class="cert-card card">
+                <div class="cert-icon-wrapper" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+                </div>
+                <div class="cert-info">
+                  <div class="cert-issuer">NPTEL (National Programme on Technology Enhanced Learning)</div>
+                  <h4 class="cert-title">Cloud Computing</h4>
+                  <p class="cert-summary">Rigorous academic certification covering cloud models, storage architectures, and distributed systems.</p>
+                </div>
+              </div>
+
+              <!-- Certification 2: One Roadmap Skill -->
+              <div class="cert-card card">
+                <div class="cert-icon-wrapper" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                </div>
+                <div class="cert-info">
+                  <div class="cert-issuer">One Roadmap Skill Certification</div>
+                  <h4 class="cert-title">Data Analyst</h4>
+                  <div class="cert-date-badge">Issued: September 2026</div>
+                  <p class="cert-summary">Evaluation in analytical thinking, structured query logic, data interpretation, and report preparation.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. RESUME SECTION -->
+    <section class="resume-section section-padding" id="resume">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-tag">Curriculum Vitae</div>
+          <h2 class="section-title">Professional <span class="gradient-text">Resume</span></h2>
+          <p class="section-subtitle">Download or preview my verified academic credentials, technical skills, and project experience.</p>
+        </div>
+
+        <div class="resume-wrapper card">
+          <div class="resume-content-row">
+            
+            <div class="resume-info-block">
+              <div class="resume-file-badge">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                <span>assets/resume.pdf</span>
+              </div>
+              
+              <h3 class="resume-heading">Praveen S — Official Resume</h3>
+              <p class="resume-subtext">
+                Prepared specifically for AI/ML engineering, software development internships, and campus placement drives. Includes full academic metrics, verified technical stack, and project summaries.
+              </p>
+
+              <div class="resume-summary-points">
+                <div class="point-item">
+                  <span class="point-check">✓</span>
+                  <span>B.E. Computer Science &amp; Engineering (AI &amp; ML) — Sudharsan Eng. College (2023–2027)</span>
+                </div>
+                <div class="point-item">
+                  <span class="point-check">✓</span>
+                  <span>AI/NLP Stack: Python, Whisper, spaCy, Hugging Face, PyQt5</span>
+                </div>
+                <div class="point-item">
+                  <span class="point-check">✓</span>
+                  <span>Internships at CodeBind Technologies &amp; Samcore Technologies</span>
+                </div>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="resume-btn-group">
+                <!-- Direct download linking to assets/resume.pdf -->
+                <a href="assets/resume.pdf" download="Praveen_S_Resume.pdf" class="btn btn-primary" id="download-resume-btn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  <span>Download Resume (PDF)</span>
+                </a>
+                
+                <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="preview-resume-btn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  <span>Preview in New Tab</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Visual Guide Box explaining how to update PDF -->
+            <div class="resume-guide-box">
+              <h4 class="guide-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                How to Update Your Resume File
+              </h4>
+              <p class="guide-text">
+                To replace this resume with an updated version anytime:
+              </p>
+              <ol class="guide-steps">
+                <li>Export your new resume as a PDF file.</li>
+                <li>Rename that file to <code>resume.pdf</code>.</li>
+                <li>Place it into the <code>assets/</code> folder inside this project, replacing the existing file.</li>
+                <li>The website download link will automatically point to your newly updated resume!</li>
+              </ol>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. CONTACT SECTION -->
+    <section class="contact-section section-padding" id="contact">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-tag">Get In Touch</div>
+          <h2 class="section-title">Let's Connect &amp; <span class="gradient-text">Collaborate</span></h2>
+          <p class="section-subtitle">Whether you have an internship opportunity, project collaboration, or technical inquiry, my inbox is always open.</p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Left Column: Direct Contact Info & Socials -->
+          <div class="contact-info-column">
+            
+            <!-- Email Info Card -->
+            <div class="contact-card card">
+              <div class="contact-card-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="contact-card-details">
+                <span class="contact-label">Email Address</span>
+                <a href="mailto:praveen03122005@gmail.com" class="contact-value email-link">praveen03122005@gmail.com</a>
+              </div>
+              <button type="button" class="copy-btn" id="copy-email-btn" title="Copy email address" aria-label="Copy email address">
+                <svg class="copy-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span class="copy-tooltip" id="copy-tooltip">Copy</span>
+              </button>
+            </div>
+
+            <!-- LinkedIn Card -->
+            <div class="contact-card card">
+              <div class="contact-card-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </div>
+              <div class="contact-card-details">
+                <span class="contact-label">LinkedIn Profile</span>
+                <a href="https://linkedin.com/in/praveen-s-36728028b" target="_blank" rel="noopener noreferrer" class="contact-value">
+                  linkedin.com/in/praveen-s-36728028b
+                </a>
+              </div>
+              <a href="https://linkedin.com/in/praveen-s-36728028b" target="_blank" rel="noopener noreferrer" class="external-link-btn" aria-label="Visit LinkedIn profile">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </a>
+            </div>
+
+            <!-- GitHub Card (Clearly identified placeholder) -->
+            <div class="contact-card card">
+              <div class="contact-card-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </div>
+              <div class="contact-card-details">
+                <span class="contact-label">GitHub Profile <span class="placeholder-tag">(Placeholder)</span></span>
+                <!-- Replace 'https://github.com/your-username' with your actual GitHub profile link -->
+                <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="contact-value placeholder-link">
+                  github.com/your-username
+                </a>
+              </div>
+              <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="external-link-btn" aria-label="Visit GitHub profile">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </a>
+            </div>
+
+            <!-- Location Card -->
+            <div class="contact-card card">
+              <div class="contact-card-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="contact-card-details">
+                <span class="contact-label">Location</span>
+                <span class="contact-value">Trichy, Tamil Nadu, India</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Interactive Validated Contact Form -->
+          <div class="contact-form-column card">
+            <h3 class="form-title">Send a Message</h3>
+            <p class="form-instruction">
+              Fill out the form below. When submitted, this validated client-side form prepares a direct email draft to <strong>praveen03122005@gmail.com</strong>.
+            </p>
+
+            <!-- Honest Client-side Notification -->
+            <div class="client-side-notice" role="note">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              <span><strong>Note:</strong> As this is a pure frontend website, submitting validates your fields and opens your default email client (Outlook, Gmail, etc.) with prefilled details.</span>
+            </div>
+
+            <form class="contact-form" id="contact-form" novalidate>
+              
+              <!-- Full Name Field -->
+              <div class="form-group">
+                <label for="contact-name" class="form-label">
+                  Full Name <span class="required-star">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <input 
+                    type="text" 
+                    id="contact-name" 
+                    name="name" 
+                    class="form-input" 
+                    placeholder="e.g. John Doe"
+                    required
+                    autocomplete="name"
+                  >
+                </div>
+                <div class="error-msg" id="name-error" aria-live="polite"></div>
+              </div>
+
+              <!-- Email Address Field -->
+              <div class="form-group">
+                <label for="contact-email" class="form-label">
+                  Email Address <span class="required-star">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <input 
+                    type="email" 
+                    id="contact-email" 
+                    name="email" 
+                    class="form-input" 
+                    placeholder="e.g. johndoe@example.com"
+                    required
+                    autocomplete="email"
+                  >
+                </div>
+                <div class="error-msg" id="email-error" aria-live="polite"></div>
+              </div>
+
+              <!-- Subject Field -->
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">
+                  Subject <span class="required-star">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <input 
+                    type="text" 
+                    id="contact-subject" 
+                    name="subject" 
+                    class="form-input" 
+                    placeholder="e.g. AI/ML Internship Opportunity"
+                    required
+                  >
+                </div>
+                <div class="error-msg" id="subject-error" aria-live="polite"></div>
+              </div>
+
+              <!-- Message Field -->
+              <div class="form-group">
+                <label for="contact-message" class="form-label">
+                  Message <span class="required-star">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <textarea 
+                    id="contact-message" 
+                    name="message" 
+                    class="form-textarea" 
+                    rows="5" 
+                    placeholder="Write your message or project inquiry here..."
+                    required
+                  ></textarea>
+                </div>
+                <div class="error-msg" id="message-error" aria-live="polite"></div>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                <span>Compose Email Draft</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+
+              <!-- Form Status Banner -->
+              <div class="form-feedback" id="form-feedback" aria-live="polite"></div>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+  <footer class="footer">
+    <div class="container footer-container">
+      
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <span class="logo-badge">PS</span>
+            <span class="logo-text">Praveen<span class="accent-text">.dev</span></span>
+          </a>
+          <p class="footer-tagline">
+            Aspiring AI/ML &amp; Software Developer • B.E. CSE (AI &amp; ML), Sudharsan Engineering College
+          </p>
+        </div>
+
+        <div class="footer-links-group">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social-group">
+          <h4 class="footer-heading">Connect</h4>
+          <ul class="footer-nav">
+            <li><a href="mailto:praveen03122005@gmail.com">Email</a></li>
+            <li><a href="https://linkedin.com/in/praveen-s-36728028b" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">GitHub (Placeholder)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; <span id="current-year"></span> <strong>Praveen S</strong>. All rights reserved. Built with HTML5, CSS3 &amp; Vanilla JavaScript.
+        </p>
+        <p class="location-stamp">Trichy, Tamil Nadu, India</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top" title="Scroll back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- External Script -->
+  <script src="script.js"></script>
+</body>
+</html>
